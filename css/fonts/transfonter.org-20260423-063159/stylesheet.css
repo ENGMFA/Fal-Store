@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'thmanyah';
+    src: url('thmanyahserifdisplay-Bold.eot');
+    src: url('thmanyahserifdisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('thmanyahserifdisplay-Bold.woff2') format('woff2'),
+        url('thmanyahserifdisplay-Bold.woff') format('woff'),
+        url('thmanyahserifdisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'thmanyah';
+    src: url('thmanyahserifdisplay-Black.eot');
+    src: url('thmanyahserifdisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('thmanyahserifdisplay-Black.woff2') format('woff2'),
+        url('thmanyahserifdisplay-Black.woff') format('woff'),
+        url('thmanyahserifdisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'thmanyah';
+    src: url('thmanyahserifdisplay-Light.eot');
+    src: url('thmanyahserifdisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('thmanyahserifdisplay-Light.woff2') format('woff2'),
+        url('thmanyahserifdisplay-Light.woff') format('woff'),
+        url('thmanyahserifdisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'thmanyah';
+    src: url('thmanyahserifdisplay-Medium.eot');
+    src: url('thmanyahserifdisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('thmanyahserifdisplay-Medium.woff2') format('woff2'),
+        url('thmanyahserifdisplay-Medium.woff') format('woff'),
+        url('thmanyahserifdisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'thmanyah';
+    src: url('thmanyahserifdisplay-Regular.eot');
+    src: url('thmanyahserifdisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('thmanyahserifdisplay-Regular.woff2') format('woff2'),
+        url('thmanyahserifdisplay-Regular.woff') format('woff'),
+        url('thmanyahserifdisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

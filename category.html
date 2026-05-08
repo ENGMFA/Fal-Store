@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Air Curtains Types</title>
+</head>
+
+<body>
+  <!-- <header> -->
+  <div class="top-header py-2 d-flex gap-md-5 align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 d-flex align-items-center">
+          <a href="index.html">
+            <img src="img/fal-logo.png" alt="Fal-Store Logo" width="60px" loading="eager"
+              title="فال-الستائر الهوائية" />
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 d-flex my-2 shadow-sm border rounded-pill bg-white">
+          <span class="input-group-text bg-transparent border-0 pe-2">
+            <i class="fas fa-search text-muted"></i>
+          </span>
+          <input type="text" class="form-control border-0 shadow-none text-start py-2" placeholder="ابحث عن منتجك" />
+        </div>
+
+        <div class="col-md-4 left-header d-none d-md-flex flex-md-row-nowrap align-items-center justify-content-end">
+          <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="login"
+            class="text-decoration-none text-dark mx-2">
+            <span>الدخول</span>
+            <i class="fas fa-user"></i>
+          </a>
+          <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart"
+            class="text-decoration-none text-dark mx-2">
+            <span>السلة</span>
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-dark mx-2">
+            <span>المفضلة</span>
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sticky-header sticky-top">
+    <nav class="navbar navbar-expand-md bg-body-tertiary m-auto">
+      <div class="container">
+        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-md-none">
+          <button class="navbar-toggler menu-icon" type="button">
+            <a href="#cart" data-bs-toggle="offcanvas" aria-controls="cart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </button>
+
+          <button class="navbar-toggler menu-icon" type="button">
+            <a href="#login" data-bs-toggle="offcanvas" aria-controls="login">
+              <i class="fas fa-user"></i>
+            </a>
+          </button>
+
+          <button class="navbar-toggler menu-icon" type="button">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 d-md-flex mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" href="#air-curtain">الستائر الهوائية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" href="#offers">العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" href="category.html" target="_blank">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" href="category.html" target="_blank">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- </header> -->
+
+  <!-- Start hero Banner -->
+  <section class="category-banner">
+    <h1 class="category-title">الستائر الهوائية</h1>
+  </section>
+  <!-- End hero Banner -->
+
+  <div class="container mt-5">
+    <button class="navbar-toggler menu-icon btn-filter d-sm-none" type="button">
+      <a href="#filter" data-bs-toggle="offcanvas" aria-controls="filter">
+        <i class="fas fa-filter"></i>
+      </a>
+    </button>
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="filter-section sticky-lg-top">
+          <h4 class="filter-title">التصفية بالبحث :</h4>
+          <input type="search" class="search form-control" placeholder="ابحث ...">
+          <select name="search-dropdown" id="" class="form-select mt-3">
+            <option value="" disabled selected>اختر المنتج</option>
+            <option value="">ستارة صناعية</option>
+            <option value="">ستارة هوائية تجارية نوع SS</option>
+            <option value="">ستارة هوائية تجارية نوع Basic</option>
+            <option value="">ستارة هوائية تجارية نوع Compact</option>
+            <option value="">ستارة هوائية تجارية Drive Thru</option>
+            <option value="">ستارة هوائية تجارية نوع Ceiling </option>
+          </select>
+          <hr>
+          <h4 class="filter-title">التصفية حسب التصنيف :</h4>
+          <div class="filter-radio d-flex flex-column gap-2">
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial">
+              <label for="radio-check-industrial" class="form-range">ستارة صناعية</label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS">
+              <label for="radio-check-SS" class="form-range">ستارة هوائية تجارية نوع SS</label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru">
+              <label for="radio-check-Drive Thru" class="form-range">ستارة هوائية تجارية Drive Thru</label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic">
+              <label for="radio-check-Basic" class="form-range">ستارة هوائية تجارية نوع Basic</label>
+            </div>
+          </div>
+          <hr>
+          <h4 class="filter-title">التصفية حسب الحجم :</h4>
+          <div class="filter-radio d-flex flex-column gap-2">
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial-size">
+              <label for="radio-check-industrial-size" class="form-range">8 متر </label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS-size">
+              <label for="radio-check-SS-size" class="form-range">4 متر</label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru-size">
+              <label for="radio-check-Drive Thru-size" class="form-range">2 متر</label>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+              <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic-size">
+              <label for="radio-check-Basic-size" class="form-range">1 متر</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-9">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="col product mb-2 industrial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/Industrial.png" alt="Industrial" class="card-img-top" title="ستارة صناعية" loading="lazy"
+                style="margin-top: 20px; margin-bottom: 30px" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة صناعية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هواء صناعية Industrial - تغطي حتى ارتفاع 8 متر -
+                  أبيض
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">5000 ر.س</span>
+                  <span class="old-price">6000 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded-pill">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-2 commercial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/SS.png" alt="SS" class="card-img-top" title="ستارة تجارية نوع SS" loading="lazy" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة تجارية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هوائية SS للمولات والمحلات المفتوحة - حتى ارتفاع 5.5
+                  متر - أبيض
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">1380 ر.س</span>
+                  <span class="old-price">2000 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded-pill">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-2 commercial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/Drive thru Series.png" alt="Drive Thru Series" title="ستارة خدمة صف السيارات" loading="lazy"
+                class="card-img-top" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة تجارية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هوائية Drive-Thru لنافذة خدمة السيارات - 60 سم -
+                  أبيض
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">805 ر.س</span>
+                  <span class="old-price">1000 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded-pill">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-2 commercial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/Compact.png" alt="Industrial" class="card-img-top" title="ستارة تجارية نوع Compact"
+                loading="lazy" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة تجارية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هوائية Compact - تغطي حتى ارتفاع 3 متر - أبيض
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">1035 ر.س</span>
+                  <span class="old-price">2000 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded-pill">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-2 commercial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/Ceiling-1.png" alt="Ceiling" class="card-img-top" title="ستارة تجارية توع Ceiling"
+                loading="lazy" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة تجارية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هوائية Ceiling - تغطي حتى ارتفاع 4 متر - أبيض.
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">3335 ر.س</span>
+                  <span class="old-price">4000 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded-pill">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-2 commercial">
+            <div class="card cat overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <img src="img/Basic.png" alt="Basic" class="card-img-top" title="ستارة تجارية نوع Basic" loading="lazy" />
+              <div class="product-info">
+                <h3 class="product-title text-center">ستارة تجارية</h3>
+                <p class="product-desc text-truncate-2">
+                  فال ستارة هوائية Basic - تغطي حتى ارتفاع 3.5 متر- أبيض.
+                </p>
+
+                <div class="stars mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price mb-2 w-100 d-flex">
+                  <span class="current-price">1150 ر.س</span>
+                  <span class="old-price">1500 ر.س</span>
+                </div>
+                <button class="btn btn-primary w-100 rounded">
+                  أضف إلى السلة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ٍStart Quick View Products -->
+  <div class="modal fade" id="quick-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-4" id="exampleModalToggleLabel">
+            ستارة هواء صناعية
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img src="img/Industrial-1.webp" loading="lazy" alt="ستارة هواء صناعية" class="img-fluid">
+              <a href="product.html"><button class="btn btn-primary w-100 my-2">التفاصيل</button></a>
+            </div>
+            <div class="col">
+              <img width="20%" class="mt-3" src="img/fal-logo.png" alt="Fal Air Curtain">
+              <h1 class="modal-title fw-bold fs-4 my-2">ستارة هوائية صناعية لون أبيض</h1>
+              <p class="product-desc">
+                تعاني من تسرب الهواء أو الغبار في المداخل الصناعية الكبيرة؟ ستارة الهواء الصناعية من فال أقوى من التحدي!
+                بيئات العمل الصناعية تحتاج حلولًا غير تقليدية، وستارة فال الهوائية للمصانع بقدرتها على تغطية حتى 8
+                أمتار، هي الحاجز
+                القوي الذي يمنع التلوث ويوفر بيئة مستقرة حتى في أصعب الظروف.
+              </p>
+              <div class="quick-reviews">
+                <span class="fw-bold my-3">تقييمات المستخدمين :</span>
+                <div class="stars mb-2 d-inline-flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="price my-3 w-100 d-flex">
+                <span class="current-price">5000 ر.س</span>
+                <span class="old-price">6000 ر.س</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn btn-outline-primary">+</button>
+                  <button type="button" class="btn btn-outline-primary text-muted">1</button>
+                  <button type="button" class="btn btn-outline-primary">-</button>
+                </div>
+                <div class="gap-2 d-flex">
+                  <button class="btn btn-outline-primary">أضف إلى السلة</button>
+                  <button class="btn btn-outline-success">شراء الآن</button>
+                </div>
+              </div>
+              <hr>
+              <div class="category mb-3">
+                <span class="fw-bold">التصنيفات :</span>
+                <a href="">ستائر صناعية</a>
+              </div>
+              <div class="share d-inline-flex gap-2">
+                <span class="fw-bold">المشاركة :</span>
+                <div class="social-icons fs-6">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Quick View Products -->
+
+  <!-- Start Mini Cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="cartlabel">سلة المشتريات</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="row row-mini-card">
+        <div class="col mini-card">
+          <img src="img/Basic-2.png" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+          <p class="mt-4">فال ستارة هوائية Basic</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+
+
+        <div class="col mini-card">
+          <img src="img/Ceiling-1.webp" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+          <p class="mt-4">فال ستارة هوائية Ceiling</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+
+
+        <div class="col mini-card">
+          <img src="img/Compact.png" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+          <p class="mt-4">فال ستارة هوائية Compact</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+
+
+        <div class="col mini-card">
+          <img src="img/Drive thru Series.jpg" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top"
+            loading="lazy">
+          <p class="mt-4">فال ستارة هوائية Drive-Thru</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+
+
+        <div class="col mini-card">
+          <img src="img/Industrial-1.webp" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+          <p class="mt-4">فال ستارة هواء صناعية</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+
+
+        <div class="col mini-card">
+          <img src="img/SS.png" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+          <p class="mt-4">فال ستارة هوائية SS</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary text-muted">1</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3">
+        <p class="alert alert-info p-3 my-3 text-center fw-bold">مجموع المنتجات : 3000 ر.س</p>
+        <a href="cart.html"><button class="btn btn-outline-primary w-100">عرض السلة</button></a>
+        <a href="checkout.html"><button class="btn btn-outline-success w-100">إتمام الشراء</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- End Mini Cart -->
+
+  <!-- Start Filter -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="filter">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="filterlabel">التصفية</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="filter-section sticky-lg-top">
+        <h4 class="filter-title">التصفية بالبحث :</h4>
+        <input type="search" class="search form-control" placeholder="ابحث ...">
+        <select name="search-dropdown" id="" class="form-select mt-3">
+          <option value="" disabled selected>اختر المنتج</option>
+          <option value="">ستارة صناعية</option>
+          <option value="">ستارة تجارية نوع SS</option>
+          <option value="">ستارة تجارية نوع Basic</option>
+          <option value="">ستارة تجارية نوع Compact</option>
+          <option value="">ستارة تجارية Drive Thru</option>
+          <option value="">ستارة تجارية نوع Ceiling </option>
+        </select>
+        <hr>
+        <h4 class="filter-title">التصفية حسب التصنيف :</h4>
+        <div class="filter-radio d-flex flex-column gap-2">
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial-1">
+            <label for="radio-check-industrial-1" class="form-range">ستارة صناعية</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS-1">
+            <label for="radio-check-SS-1" class="form-range">ستارة تجارية نوع SS</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru-1">
+            <label for="radio-check-Drive Thru-1" class="form-range">ستارة تجارية Drive Thru</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic-1">
+            <label for="radio-check-Basic-1" class="form-range">ستارة تجارية نوع Basic</label>
+          </div>
+        </div>
+        <hr>
+        <h4 class="filter-title">التصفية حسب الحجم :</h4>
+        <div class="filter-radio d-flex flex-column gap-2">
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial-size-1">
+            <label for="radio-check-industrial-size-1" class="form-range">8 متر </label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS-size-1">
+            <label for="radio-check-SS-size-1" class="form-range">4 متر</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru-size-1">
+            <label for="radio-check-Drive Thru-size-1" class="form-range">2 متر</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic-size-1">
+            <label for="radio-check-Basic-size-1" class="form-range">1 متر</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Filter -->
+
+  <!-- Login -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="loginlabel">تسجيل الدخول</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-sign">
+        <form>
+          <p class="error-message" style="color: red; display: none; text-align: right; margin-top: 10px;"></p>
+          <div class="mb-3">
+            <label for="Email" class="form-label fw-bold">البريد الالكتروني</label>
+            <input type="email" class="form-control Email" id="Email" placeholder="أدخل اسم المستخدم او البريد">
+            <div id="emailHelp" class="form-text emailhelp">لن يتم مشاركة البريد الالكتروني</div>
+          </div>
+          <div class="mb-3">
+            <label for="Password" class="form-label fw-bold">كلمة المرور</label>
+            <input type="password" class="form-control Password" id="Password" placeholder="أدخل كلمة المرور">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check">تذكر بياناتي</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" onclick="validateForm()">تسجيل</button>
+
+          <div class="alert alert-danger my-3 text-center">
+            <a href="#">فقدت كلمة المرور ؟</a>
+          </div>
+          <hr>
+          <div class="text-center mt-5">
+            <i class="fa-regular fa-user fa-5x"></i>
+            <p>لا يوجد لديك حساب ؟</p>
+            <button class="btn btn-primary w-100">إنشاء حساب</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Fal Footer -->
+  <footer class="fal-footer mt-5 pt-2">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4">
+        <div class="col f-logo text-center justify-content-between align-items-center">
+          <a href="index.html">
+            <img src="img/Logo/FAL--White-Logo.png" title="فال -الستائر الهوائية" class="img-fluid w-50"
+              alt=" Fal Logo">
+          </a>
+          <h3> فال-الستائر الهوائية</h3>
+          <p class="product-desc">
+            نقدم منتجات وخدمات ممتازة للمستخدمين، ونتعاون مع الشركاء لبناء صناعة التهوية.
+
+            تتميز ستائرنا الهوائية بالأداء الهادئ و توفير الطاقة، وتكنولوجيا المحركات
+          </p>
+        </div>
+        <div class="col f-important-links justify-content-between align-items-center gap-2">
+          <h4 class="my-5 text-center">روابط مهمة</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">المدونة</a></li>
+            <li><a href="gallery-fal.html" target="_blank">معرض الصور</a></li>
+            <li><a href="index.html">الستارة الهوائية</a></li>
+            <li><a href="contact-us.html">استشارة</a></li>
+          </ul>
+        </div>
+        <div class="col f-contact-us justify-content-between align-items-center gap-2">
+          <h4 class="my-5 text-center">تواصل معنا</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://goo.gl/maps/QTzcsmjg31pqBPKu8" target="_blank"><i
+                  class="fa-solid fa-location-dot"></i>الرياض –مركز المرسلات – مكتب رقم 1</a></li>
+            <li><a href="https://wa.me/00966537363230"><i class="fa-brands fa-whatsapp"></i>00966537363230</a></li>
+            <li><a href="tel:00966537363230"><i class="fa-solid fa-phone-flip"></i>00966537363230</a></li>
+            <li><a href="mailto:dar_almawared@hotmail.com"><i class="fa-solid fa-envelope"></i>تواصل عبر البريد
+                الالكتروني</a></li>
+          </ul>
+        </div>
+
+        <div class="col f-newsletter text-center text-lg-start gap-2">
+          <h4 class="my-5 text-center">النشرة البريدية</h4>
+          <p>اشترك معنا ليصلك آخر المنتجات والعروض</p>
+          <form action="">
+            <input type="text" placeholder="أدخل البريد الالكتروني" class="form-control mb-2">
+            <button class="btn btn-primary w-100">اشتراك</button>
+          </form>
+        </div>
+        <hr class="w-100">
+      </div>
+
+      <div class="row row-cols-1 align-items-center row-cols-md-2 ">
+        <div class="copyright col text-center text-md-start">
+          <p class="">الحقوق محفوظة | &copy; 2026
+            - فال
+            للستائر الهوائية
+          </p>
+        </div>
+        <div class="payments col text-center text-md-end">
+          <img src="img/Payments.webp" alt="payments" loading="lazy" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Fal Footer -->
+   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script type="module" src="js/threejs.js"></script> -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+/* الحاوية الخارجية */
+.ticker-wrap {
+    background-color: transparent;
+    padding: 20px 0;
+    direction: ltr; /* التمرير التقني يفضل LTR لتجنب مشاكل الحسابات البرمجية، لكن سنرتب المحتوى ليتناسب مع موقعك */
+}
+
+/* المسار المتحرك */
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 40s linear infinite;
+}
+
+/* حركة التمرير من اليمين إلى اليسار تناسباً مع الاتجاه العربي */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* نتحرك بمقدار نصف طول المحتوى (لأننا سنكرر الشعارات) */
+        transform: translateX(-50%);
+    }
+}
+
+/* تنسيق عناصر الشعارات */
+.ticker-item {
+    padding: 0 40px; /* مسافة بين الشعارات */
+}
+
+.ticker-item img {
+    max-height: 40px; /* توحيد الطول */
+    filter: grayscale(100%) brightness(2.5); /* جعل الشعارات بيضاء لتناسب الخلفية الداكنة */
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.ticker-item img:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* إيقاف الحركة عند تمرير الماوس */
+.ticker-wrap:hover .ticker-track {
+    animation-play-state: paused;
+}
+
+/* تحسين تأثير التلاشي عند الأطراف */
+.absolute.inset-0.z-10 {
+    background: linear-gradient(to right, 
+        #000 0%, 
+        transparent 15%, 
+        transparent 85%, 
+        #000 100%
+    );
+}

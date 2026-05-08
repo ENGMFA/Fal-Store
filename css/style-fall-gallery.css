@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+html,
+body {
+  width: 100vw;
+  height: 1000vh;
+  overflow: hidden;
+  font-family: Montserrat;
+}
+
+.logo {
+  position: fixed;
+  padding: 1.5em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+  
+  font-weight: 500;
+}
+
+.sidebar {
+  width: 100vh;
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  transform: rotate(-90deg) translate(-100%, 0);
+  transform-origin: left top;
+  padding: 1.5em 3em;
+  
+} */
+
+/* .sidebar > div:nth-child(1) {
+  flex: 2;
+}
+
+.sidebar > div:nth-child(2) {
+  flex: 2;
+  display: flex;
+  gap: 6em;
+}
+
+p#header {
+
+  text-transform: uppercase;
+  font-size: 7.5rem;
+  line-height: 85%;
+  margin-bottom: 4rem;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: absolute;
+  top: 40%;
+  width: 8000px;
+  padding: 0 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.slide {
+  width: 400px;
+  height: 500px;
+  background: #e3e3e3;
+}
+
+
+
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+/* Main container */
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Keeps things neat if you add arrows later */
+}
+
+/* The wrapper that handles the scrolling */
+.slider-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Snaps exactly to each image */
+  scroll-behavior: smooth;
+  gap: 15px; /* Small adjustment: adds breathing room between images */
+  padding: 10px 0;
+}
+
+/* Optional: Hide the scrollbar for a cleaner UI */
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* تعديل الحاوية لتسمح بنزول الصور للسطر التالي */
+.slider-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* هذا السطر مهم جداً لعرض جميع الصور */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* margin-bottom: 15px;  */
+  padding: 20px;
+}
+
+/* إعطاء عرض محدد لكل صورة */
+/* تنسيق حاوية الصورة */
+.slide {
+  /* احتفظ بإعدادات العرض الخاصة بك هنا (سواء اخترت Slider أو Grid) */
+  flex: 0 0 calc(33.33% - 15px); /* مثال لـ 3 صور في الصف */
+  
+  position: relative;
+  overflow: hidden; /* مهم جداً لكي لا تخرج الصورة عن الإطار عند التكبير */
+  border-radius: 12px; /* حواف دائرية ناعمة */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* ظل خفيف حول الصورة */
+  background-color: #fff;
+  cursor: pointer; /* تغيير شكل الماوس ليدل على أن الصورة قابلة للتفاعل */
+  
+  /* نعومة الحركة (Transition) للمسار والظل */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* تنسيق الصورة نفسها */
+.slide img {
+  width: 100%;
+  object-fit: cover; 
+  display: block;
+  
+  /* نعومة حركة التكبير للصورة */
+  transition: transform 0.4s ease; 
+}
+
+/* ------------------------------------- */
+/* --- تأثيرات الهوفر (Hover Effects) --- */
+/* ------------------------------------- */
+
+/* 1. تأثير رفع الإطار وزيادة الظل */
+.slide:hover {
+  transform: translateY(-4px); /* رفع الصورة للأعلى بمقدار 8 بيكسل */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* زيادة قوة الظل لتبدو الصورة أقرب للمستخدم */
+  border: 2px solid var(--hover-text-color); /* إضافة إطار خفيف عند الهوفر */
+}
+
+/* 2. تأثير تكبير الصورة الداخلي (Zoom-in) */
+.slide:hover img {
+  transform: scale(1.08); /* تكبير الصورة بنسبة 8% */
+}
+
+/* 3. اختياري: تعتيم باقي الصور عند التركيز على صورة واحدة */
+.slider-wrapper:hover .slide:not(:hover) {
+  opacity: 0.7; /* تقليل وضوح الصور التي لا يقف عليها الماوس */
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 calc(50% - 15px); /* صورتين في الصف للجوال */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 100%; /* صورة واحدة في الصف للشاشات الصغيرة جداً */
+  }
+}

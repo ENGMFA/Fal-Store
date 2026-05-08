@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Login -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="loginlabel">تسجيل الدخول</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-sign">
+        <form>
+          <p class="error-message" style="color: red; display: none; text-align: right; margin-top: 10px;"></p>
+          <div class="mb-3">
+            <label for="Email" class="form-label fw-bold">البريد الالكتروني</label>
+            <input type="email" class="form-control Email" id="Email" placeholder="أدخل اسم المستخدم او البريد">
+            <div id="emailHelp" class="form-text emailhelp">لن يتم مشاركة البريد الالكتروني</div>
+          </div>
+          <div class="mb-3">
+            <label for="Password" class="form-label fw-bold">كلمة المرور</label>
+            <input type="password" class="form-control Password" id="Password" placeholder="أدخل كلمة المرور">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check">تذكر بياناتي</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" onclick="validateForm()">تسجيل</button>
+
+          <div class="alert alert-danger my-3 text-center">
+            <a href="#">فقدت كلمة المرور ؟</a>
+          </div>
+          <hr>
+          <div class="text-center mt-5">
+            <i class="fa-regular fa-user fa-5x"></i>
+            <p>لا يوجد لديك حساب ؟</p>
+            <button class="btn btn-primary w-100">إنشاء حساب</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

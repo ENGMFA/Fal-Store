@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Countries codes input -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Checkout | الدفع</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <div id="header"></div>
+  <!-- End Header -->
+  <!-- Start hero Banner -->
+  <section class="category-banner">
+    <h1 class="category-title">إتمام الطلب</h1>
+  </section>
+  <!-- End hero Banner -->
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="user-info">
+          <h4 class="text-center">معلومات الشحن</h4>
+          <div>
+            <label for="user-name" class="form-label">الاسم:</label>
+            <input type="text" class="form-control" id="user-name" required placeholder="أدخل اسمك الكامل">
+          </div>
+          <div class="my-3">
+            <label for="user-email" class="form-label">البريد الإلكتروني:</label>
+            <input type="email" class="form-control" id="user-email" required placeholder="أدخل بريدك الإلكتروني">
+          </div>
+          <div class="my-3">
+            <label for="phone" class="form-label">رقم الهاتف:</label>
+            <input type="tel" class="form-control" id="phone" required placeholder="أدخل رقم هاتفك">
+          </div>
+          <div class="my-3">
+            <label for="user- cargo" class="form-label">وجهة الشحن:</label>
+            <select class="form-select" id="user-cargo" required>
+              <option value="" disabled selected>اختر وجهة الشحن</option>
+              <option value="riyadh">الرياض</option>
+              <option value="jeddah">جدة</option>
+              <option value="dammam">الدمام</option>
+              <option value="medina">المدينة المنورة</option>
+              <option value="mecca">مكة المكرمة</option>
+              <option value="khobar">الخبر</option>
+            </select>
+          </div>
+          <div class="my-3">
+            <label for="user-address" class="form-label">عنوان الشحن:</label>
+            <input type="text" class="form-control" id="user-address" required placeholder="أدخل عنوان الشحن الكامل">
+          </div>
+          <div class="my-3">
+            <label for="user-notes" class="form-label">ملاحظات إضافية:</label>
+            <textarea class="form-control" id="user-notes" placeholder="أدخل أي ملاحظات إضافية"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-1 g-3 row-mini-card">
+          <!-- <div class="col d-flex justify-content-around px-3">
+            <div class="d-flex flex-column gap-2">
+              <img src="img/Basic-2.png" alt="Bascic-Air Curtain" class="w-25 img-fluid card-img-top" loading="lazy">
+              <p class="mt-4">فال ستارة هوائية Basic</p>
+            </div>
+            <div class="d-flex gap-4">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex gap-4 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div> -->
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+          <div
+            class="checkout-card col d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-3 border rounded shadow-sm gap-3">
+
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3 text-center text-md-start w-100 w-md-auto">
+              <img src="img/Basic-2.png" alt="Basic-Air Curtain" class="img-fluid" style="width: 80px; height: auto;"
+                loading="lazy">
+              <p class="mb-0 fw-bold">فال ستارة هوائية Basic</p>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">السعر الافرادي:</span>
+              <span class="fw-bold text-primary">250 SAR</span>
+            </div>
+
+            <div class="d-flex justify-content-center w-100 w-md-auto my-2 my-md-0">
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn btn-outline-primary px-3">+</button>
+                <button type="button" class="btn btn-outline-primary text-muted disabled">1</button>
+                <button type="button" class="btn btn-outline-primary px-3">-</button>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-row flex-md-column justify-content-between justify-content-md-center align-items-center gap-2 w-100 w-md-auto border-top border-md-0 pt-2 pt-md-0">
+              <span class="fw-bold text-muted small">إجمالي السعر:</span>
+              <span class="fw-bold text-success">500 SAR</span>
+            </div>
+
+          </div>
+
+          <!-- <div class="col mini-card justify-content-between align-items-center px-3">
+
+            <div class="d-flex flex-column gap-2 align-items-center">
+              <img src="img/Ceiling-1.webp" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top"
+                loading="lazy">
+              <p class="mt-4">فال ستارة هوائية Ceiling</p>
+            </div>
+
+            <div class="d-flex flex-column gap-1">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div>
+
+
+          <div class="col mini-card justify-content-between align-items-center px-3">
+            <div class="d-flex flex-column gap-2 align-items-center">
+              <img src="img/Compact.png" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+              <p class="mt-4">فال ستارة هوائية Compact</p>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div>
+
+
+          <div class="col mini-card justify-content-between align-items-center px-3">
+            <div class="d-flex flex-column gap-2 align-items-center">
+              <img src="img/Drive thru Series.jpg" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top"
+                loading="lazy">
+              <p class="mt-4">فال ستارة هوائية Drive-Thru</p>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div>
+
+
+          <div class="col mini-card justify-content-between align-items-center px-3">
+            <div class="d-flex flex-column gap-2 align-items-center">
+              <img src="img/Industrial-1.webp" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top"
+                loading="lazy">
+              <p class="mt-4">فال ستارة هواء صناعية</p>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div>
+
+
+          <div class="col mini-card justify-content-between align-items-center px-3">
+            <div class="d-flex flex-column gap-2 align-items-center">
+              <img src="img/SS.png" alt="Bascic-Air Curtain" class="w-100 img-fluid card-img-top" loading="lazy">
+              <p class="mt-4">فال ستارة هوائية SS</p>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">السعر الافرادي</span>
+              <p class="fw-bold">250 SAR</p>
+            </div>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn btn-outline-primary">+</button>
+              <button type="button" class="btn btn-outline-primary text-muted">1</button>
+              <button type="button" class="btn btn-outline-primary">-</button>
+            </div>
+            <div class="d-flex flex-column gap-1 pt-3">
+              <span class="fw-bold">إجمالي السعر</span>
+              <p class="fw-bold">500 SAR</p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="d-flex align-items-center my-3 w-75">
+          <div class="input-group copun-code w-100 w-md-50 shadow-sm">
+            <input type="text" class="form-control p-2" placeholder="كود الخصم">
+            <button class="btn btn-outline-primary px-4" type="button" id="button-addon2">تطبيق</button>
+          </div>
+        </div>
+        <div class="payments-section mt-5">
+          <div class="payments-methods">
+            <h4 class="mb-3">طرق الدفع</h4>
+            <div class="d-flex flex-column gap-3">
+              <div class="payment-option d-flex align-items-center gap-3">
+                <input type="radio" name="payment" id="credit-card" checked>
+                <label for="credit-card" class="d-flex align-items-center gap-2">
+                  <i class="fas fa-credit-card"></i>
+                  بطاقة الائتمان
+                </label>
+              </div>
+              <div class="payment-option d-flex align-items-center gap-3">
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal" class="d-flex align-items-center gap-2">
+                  <i class="fab fa-paypal"></i>
+                  باي بال
+                </label>
+              </div>
+              <div class="payment-option d-flex align-items-center gap-3">
+                <input type="radio" name="payment" id="cash-on-delivery">
+                <label for="cash-on-delivery" class="d-flex align-items-center gap-2">
+                  <i class="fas fa-money-bill-wave"></i>
+                  الدفع عند الاستلام
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h4>تفاصيل الدفع</h4>
+            <div class="payment-details mt-3">
+              <div class="mb-3 w-100 position-relative">
+                <label for="card-number" class="form-label">رقم البطاقة:</label>
+                <input type="text" class="form-control" id="card-number" placeholder="أدخل رقم بطاقتك">
+                <img src="img/payments.png" alt="payment methods" class="img-fluid mt-2 position-absolute"
+                  style="width: 150px;" loading="lazy">
+              </div>
+              <div class="d-flex justify-content-between gap-2 mt-3">
+                <div class="mb-3 w-100">
+                  <label for="expiry-date" class="form-label">تاريخ الانتهاء:</label>
+                  <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                </div>
+                <div class="mb-3 w-100">
+                  <label for="cvv" class="form-label">CVV:</label>
+                  <input type="text" class="form-control" id="cvv" placeholder="أدخل CVV">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-5">
+            <button class="btn btn-success px-5">تأكيد الدفع</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="quick-view-product"></div>
+  <div id="cart-offcanvas"></div>
+  <div id="wishlist-offcanvas"></div>
+  <div id="login-offcanvas"></div>
+  <div id="footer"></div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/itil.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

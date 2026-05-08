@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Contact.css" />
+  <title>Contact Page | تواصل معنا</title>
+  <!-- رابط Font Awesome الأحدث والأكثر استقراراً -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <div id="header"></div>
+  <!-- End Header -->
+
+  <div class="contact_us_2">
+    <div class="responsive-container-block big-container">
+      <div class="blueBG"></div>
+      <div class="responsive-container-block container">
+        <!-- تم إضافة id="contactForm" هنا -->
+        <form class="form-box" id="contactForm">
+          <div class="container-block form-wrapper">
+            <p class="text-blk contactus-head">
+              تواصل معنا
+            </p>
+
+            <!-- الاسم الأول - تم إضافة id -->
+            <div class="input-group-wrapper">
+              <p class="text-blk input-title">
+                الاسم الأول
+              </p>
+              <input class="input" name="FirstName" id="firstName" placeholder="أدخل الاسم الأول...">
+            </div>
+
+            <!-- الاسم الأخير - تم إضافة id -->
+            <div class="input-group-wrapper">
+              <p class="text-blk input-title">
+                الاسم الأخير
+              </p>
+              <input class="input" name="LastName" id="lastName" placeholder="أدخل الاسم الأخير...">
+            </div>
+
+            <!-- البريد الإلكتروني - تم إضافة id -->
+            <div class="input-group-wrapper">
+              <p class="text-blk input-title">
+                البريد الإلكتروني
+              </p>
+              <input class="input" name="Email" id="email" type="email" placeholder="example@domain.com">
+            </div>
+
+            <!-- رقم الهاتف - تم إضافة id -->
+            <div class="input-group-wrapper">
+              <p class="text-blk input-title">
+                رقم الهاتف
+              </p>
+              <input class="input" name="PhoneNumber" id="phone" placeholder="05xxxxxxxx">
+            </div>
+
+            <!-- رسالة الاستفسار - تم إضافة id -->
+            <div class="input-group-wrapper">
+              <p class="text-blk input-title">
+                رسالتك
+              </p>
+              <textarea class="textinput" name="Message" id="message"
+                placeholder="اكتب استفسارك أو رسالتك هنا..."></textarea>
+            </div>
+
+            <!-- تم إضافة id="submitBtn" هنا -->
+            <button class="submit-btn" id="submitBtn" type="submit">
+              إرسال الرسالة <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+
+          <div class="social-media-links">
+            <a href="#" aria-label="تويتر">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="فيسبوك">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="جوجل">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" aria-label="إنستغرام">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- رسالة منبثقة مخصصة -->
+  <div id="customAlert" class="custom-alert">
+    <div class="custom-alert-content">
+      <i class="fas fa-check-circle" style="font-size: 50px; color: #28a745; margin-bottom: 15px;"></i>
+      <h3>تم الإرسال بنجاح!</h3>
+      <p>شكراً لتواصلك معنا، سيتم الرد عليك في أقرب وقت ممكن.</p>
+      <button onclick="closeAlert()" class="alert-btn">حسناً</button>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div id="cart-offcanvas"></div>
+
+  <!-- Login -->
+  <div id="login-offcanvas"></div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Wishlist -->
+  <div id="wishlist-offcanvas"></div>
+
+  <script>
+    // عرض النافذة المنبثقة
+    function showAlert() {
+      const alert = document.getElementById('customAlert');
+      if (alert) {
+        alert.style.display = 'flex';
+        // منع التمرير في الخلفية
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // إغلاق النافذة المنبثقة
+    function closeAlert() {
+      const alert = document.getElementById('customAlert');
+      if (alert) {
+        alert.style.display = 'none';
+        // إعادة التمرير في الخلفية
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // إغلاق النافذة عند الضغط على الخلفية
+    window.onclick = function (event) {
+      const alert = document.getElementById('customAlert');
+      if (alert && event.target === alert) {
+        closeAlert();
+      }
+    }
+
+    // التأكد من تحميل الصفحة بالكامل قبل إضافة المستمعين
+    document.addEventListener('DOMContentLoaded', function () {
+      // معالج إرسال النموذج (محاكاة فقط، بدون إرسال حقيقي)
+      const form = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault(); // منع الإرسال الحقيقي
+
+          // جلب القيم من الحقول
+          const firstName = document.getElementById('firstName')?.value.trim() || '';
+          const lastName = document.getElementById('lastName')?.value.trim() || '';
+          const email = document.getElementById('email')?.value.trim() || '';
+          const phone = document.getElementById('phone')?.value.trim() || '';
+          const message = document.getElementById('message')?.value.trim() || '';
+
+          // التحقق من تعبئة الحقول المطلوبة
+          if (!firstName) {
+            alert('❌ الرجاء إدخال الاسم الأول');
+            document.getElementById('firstName')?.focus();
+            return;
+          }
+
+          if (!lastName) {
+            alert('❌ الرجاء إدخال الاسم الأخير');
+            document.getElementById('lastName')?.focus();
+            return;
+          }
+
+          if (!email) {
+            alert('❌ الرجاء إدخال البريد الإلكتروني');
+            document.getElementById('email')?.focus();
+            return;
+          }
+
+          if (!email.includes('@') || !email.includes('.')) {
+            alert('❌ الرجاء إدخال بريد إلكتروني صحيح');
+            document.getElementById('email')?.focus();
+            return;
+          }
+
+          if (!message) {
+            alert('❌ الرجاء كتابة رسالتك');
+            document.getElementById('message')?.focus();
+            return;
+          }
+
+          // عرض النافذة المنبثقة
+          showAlert();
+
+          // (اختياري) إعادة تعيين النموذج بعد الإرسال - أزل علامة // من السطر التالي إذا أردت تفعيله
+          document.getElementById('contactForm').reset();
+        });
+      }
+
+      // إرسال النموذج عند الضغط على Enter في حقل الرسالة (مع Shift+Enter للسطر الجديد)
+      const messageField = document.getElementById('message');
+      if (messageField) {
+        messageField.addEventListener('keypress', function (e) {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            if (submitBtn) {
+              submitBtn.click();
+            }
+          }
+        });
+      }
+    });
+  </script>
+
+  <script src="js/components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

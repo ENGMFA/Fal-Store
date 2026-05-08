@@ -1,0 +1,354 @@
+
+/* Contact-Page */
+/* ------------------------------------------
+   CSS خاص بصفحة التواصل - ترتيب عمودي بالكامل
+------------------------------------------ */
+
+/* إعادة تعيين بعض الأنماط للنموذج */
+.contact_us_2 * {
+    font-family: var(--main-font-family, 'Qumrah', 'thmanyah', sans-serif);
+    box-sizing: border-box;
+}
+
+/* الحاوية الرئيسية */
+.contact_us_2 .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_us_2 .big-container {
+    padding: 0 30px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color, #f5f5f5);
+    direction: rtl;
+}
+
+.contact_us_2 .blueBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(135deg, var(--main-color, #19639f) 0%, #0d4a7a 100%);
+}
+
+.contact_us_2 .container {
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact_us_2 .form-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    margin: 50px 0;
+    transition: var(--transition, all 0.3s);
+}
+
+.contact_us_2 .form-wrapper {
+    width: 100%;
+}
+
+/* مجموعة كل حقل - عرض كامل السطر */
+.contact_us_2 .input-group-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact_us_2 .contactus-head {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-color, #19639f);
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact_us_2 .contactus-head::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--main-color, #19639f);
+    border-radius: 2px;
+}
+
+.contact_us_2 .input-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color, #333);
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.contact_us_2 .input,
+.contact_us_2 .textinput {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    font-family: var(--font-ibm-arabic, 'IBM Plex Sans Arabic', sans-serif);
+    text-align: right;
+    color: var(--text-color, #333);
+}
+
+.contact_us_2 .input:focus,
+.contact_us_2 .textinput:focus {
+    outline: none;
+    border-color: var(--main-color, #19639f);
+    box-shadow: 0 0 0 3px rgba(25, 99, 159, 0.1);
+    background-color: white;
+}
+
+.contact_us_2 .textinput {
+    min-height: 140px;
+    resize: vertical;
+    field-sizing: content;
+}
+
+/* توجيه الـ placeholder بالعربية */
+.contact_us_2 .input::placeholder,
+.contact_us_2 .textinput::placeholder {
+    color: #aaa;
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* زر الإرسال */
+.contact_us_2 .submit-btn {
+    background-color: var(--main-color, #19639f);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: var(--transition, all 0.3s);
+    font-family: var(--main-font-family, 'Qumrah', 'thmanyah', sans-serif);
+}
+
+.contact_us_2 .submit-btn:hover {
+    background-color: var(--hover-text-color, #4c84b3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(25, 99, 159, 0.3);
+}
+
+.contact_us_2 .submit-btn i {
+    font-size: 16px;
+}
+
+/* أيقونات وسائل التواصل */
+.contact_us_2 .social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.contact_us_2 .social-media-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    transition: var(--transition, all 0.3s);
+    text-decoration: none !important;
+}
+
+.contact_us_2 .social-media-links a i {
+    font-size: 20px;
+    color: var(--text-color, #333);
+}
+
+.contact_us_2 .social-media-links a:hover {
+    background-color: var(--main-color, #19639f);
+    transform: translateY(-3px);
+}
+
+.contact_us_2 .social-media-links a:hover i {
+    color: white !important;
+}
+
+/* ==========================================
+   التجاوب مع الشاشات المختلفة (Responsive)
+========================================== */
+
+/* شاشات كبيرة */
+@media (min-width: 993px) {
+    .contact_us_2 .container {
+        max-width: 650px;
+    }
+}
+
+/* شاشات متوسطة (تابلت) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .contact_us_2 .form-box {
+        padding: 35px;
+    }
+    .contact_us_2 .container {
+        max-width: 550px;
+    }
+    .contact_us_2 .contactus-head {
+        font-size: 32px;
+    }
+}
+
+/* شاشات صغيرة (موبايل) */
+@media (max-width: 768px) {
+    .contact_us_2 .big-container {
+        padding: 0 15px;
+    }
+    .contact_us_2 .form-box {
+        padding: 25px 20px;
+        margin: 30px 0;
+    }
+    .contact_us_2 .contactus-head {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .contact_us_2 .input-title {
+        font-size: 14px;
+    }
+    .contact_us_2 .input,
+    .contact_us_2 .textinput {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .contact_us_2 .submit-btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .contact_us_2 .social-media-links {
+        gap: 15px;
+    }
+    .contact_us_2 .social-media-links a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* موبايل صغير جداً */
+@media (max-width: 480px) {
+    .contact_us_2 .form-box {
+        padding: 20px 15px;
+    }
+    .contact_us_2 .contactus-head {
+        font-size: 24px;
+    }
+    .contact_us_2 .textinput {
+        min-height: 120px;
+    }
+}
+
+/* أنماط النافذة المنبثقة */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.custom-alert-content {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    direction: rtl;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+.custom-alert-content h3 {
+    color: var(--main-color, #19639f);
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.custom-alert-content p {
+    color: var(--text-color, #333);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.alert-btn {
+    background-color: var(--main-color, #19639f);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition, all 0.3s);
+    font-family: var(--main-font-family, 'Qumrah', 'thmanyah', sans-serif);
+}
+
+.alert-btn:hover {
+    background-color: var(--hover-text-color, #4c84b3);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

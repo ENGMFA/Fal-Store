@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Slider - Continuous Loop</title>
+</head>
+
+<body>
+  <!-- Start logos -->
+<section class="clients-section">
+    <div class="container-fluid">
+      <div class="logo-slider-wrapper">
+        <div class="logo-slider" id="logoSlider">
+          <!-- Your logos only ONCE -->
+          <div class="logo-item"><img src="img/Logo/ADKN.png" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Al Dana Al-Arabia.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Al Hatab Bakery.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Al Jameel.gif" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Al Maher.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Aqarek.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Burgerizzer.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/CGS Logo.png" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Cosmos Chocoloate.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Diamond Hospitality.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Earth Cafe.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/East Consulting Engineering Center.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/Logo/Gimme Salad Riyadh.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Hilton Double Tree.webp" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/HMC Hospital.png" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Itqan Al Arabya.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/KAFD.jpg" alt="Client"></div>
+          <div class="logo-item"><img src="img/logo/Natural Food.jpg" alt="Client"></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End logos -->
+
+  
+ <script>
+    // One-time duplicate for seamless loop
+    const slider = document.querySelector('.logo-slider');
+    if (slider) {
+      // Store original content
+      const originalContent = slider.innerHTML;
+      // Duplicate it twice for seamless loop
+      slider.innerHTML = originalContent.repeat(4);
+    }
+  </script>
+</body>
+
+</html>

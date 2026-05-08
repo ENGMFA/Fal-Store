@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style-fall-gallery.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/gallery.css" /> -->
+  <title>Fal gallery | معرض صور فال </title>
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <div id="header"></div>
+  <!-- End Header -->
+
+  <!-- Start hero Banner -->
+  <section class="category-banner">
+    <div class="banner-content">
+      <h1 class="category-title">معرض الصور</h1>
+      <p class="banner-desc">اكتشف أجود أنواع الستائر الهوائية بجودة عالية</p>
+    </div>
+  </section>
+
+  <!-- Gallery1 Start -->
+  <!-- <div class="expanding-gallery-container">
+    <div class="gallery-column ">
+      <div class="gallery-wrapper" id="gallery-wrapper-1">
+        <div class="gallery-column">
+          <div class="gallery-link">
+            <img src="img/Industrial-1.png" loading="lazy" alt="ستارة هوائية صناعية" />
+            <div class="gallery-overlay">
+              <h3>ستارة هوائية صناعية</h3>
+              <p>تغطي حتى 8 متر - أبيض</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column">
+          <div class="gallery-link">
+            <img src="img/Basic-2.png" loading="lazy" alt="Basic Air Curtain" />
+            <div class="gallery-overlay">
+              <h3>ستارة Basic</h3>
+              <p>تغطي حتى 3.5 متر - أبيض</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column ">
+          <div class="gallery-link">
+            <img src="img/SS1.png" loading="lazy" alt="SS Air Curtain" />
+            <div class="gallery-overlay">
+              <h3>ستارة SS</h3>
+              <p>للمولات والمحلات - حتى 5.5 متر</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Gallery1 End -->
+
+  <!-- Gallery2 Start -->
+  <!-- <div class="expanding-gallery-container">
+    <div class="gallery-column ">
+      <div class="gallery-wrapper" id="gallery-wrapper-2">
+        <div class="gallery-column">
+          <div class="gallery-link">
+            <img src="img/SS.png" loading="lazy" alt="SS Air Curtain" />
+            <div class="gallery-overlay">
+              <h3>ستارة SS</h3>
+              <p>للمولات والمحلات - حتى 5.5 متر</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column">
+          <div class="gallery-link">
+            <img src="img/Drive thru Series.jpg" loading="lazy" alt="Drive-Thru Air Curtain" />
+            <div class="gallery-overlay">
+              <h3>ستارة Drive Thru</h3>
+              <p>لنافذة خدمة السيارات - 60 سم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-column">
+          <div class="gallery-link">
+            <img src="img/Compact.png" loading="lazy" alt="Compact Air Curtain" />
+            <div class="gallery-overlay">
+              <h3>ستارة Compact</h3>
+              <p>تغطي حتى 3 متر - أبيض</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Gallery2 End -->
+
+
+  <div class="slider">
+    <div class="slider-wrapper">
+      <div class="slide">
+        <img src="./img/Basic-1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/Ceiling-1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/SS-8.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/Drive thru Series.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/Compact (5).jpeg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/Industrial-1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/SS-3.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/SS (40).jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/Compact (1).jpeg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div id="cart-offcanvas"></div>
+
+  <!-- Login -->
+  <div id="login-offcanvas"></div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Wishlist -->
+  <div id="wishlist-offcanvas"></div>
+
+  <!-- <script>
+    // ==========================================
+    // معرض الصور - خاصية التوسيع لكل صف على حدة
+    // ==========================================
+
+    (function () {
+      // الحصول على جميع حاويات المعرض
+      const allWrappers = document.querySelectorAll('.gallery-wrapper');
+
+      // وظيفة لتفعيل خاصية التوسيع على صف معين
+      function setupGallery(wrapper) {
+        const columns = wrapper.querySelectorAll('.gallery-column');
+
+        columns.forEach((column) => {
+          column.addEventListener('click', function (e) {
+            // منع التوسيع إذا نقر على النصوص
+            if (e.target.closest('.gallery-overlay')) return;
+
+            // هل هذا العمود مفتوح حالياً؟
+            const isExpanded = this.classList.contains('expanded');
+
+            // إغلاق جميع الأعمدة في نفس الصف فقط
+            columns.forEach((col) => {
+              col.classList.remove('expanded');
+            });
+
+            // إذا كان العمود ليس مفتوحاً، افتحه
+            if (!isExpanded) {
+              this.classList.add('expanded');
+            }
+          });
+        });
+      }
+
+      // تفعيل الخاصية على جميع صفوف المعرض
+      allWrappers.forEach((wrapper) => {
+        setupGallery(wrapper);
+      });
+
+    })();
+  </script> -->
+
+  <script src="js/components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- <script src="js/script-gallery.js"></script> -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
