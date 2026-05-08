@@ -329,7 +329,71 @@
       </div>
     </div>
   </div>
+  <!-- Start Filter -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="filter">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="filterlabel">التصفية</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
 
+    <div class="offcanvas-body">
+      <div class="filter-section sticky-lg-top">
+        <h4 class="filter-title">التصفية بالبحث :</h4>
+        <input type="search" class="search form-control" placeholder="ابحث ...">
+        <select name="search-dropdown" id="" class="form-select mt-3">
+          <option value="" disabled selected>اختر المنتج</option>
+          <option value="">ستارة صناعية</option>
+          <option value="">ستارة تجارية نوع SS</option>
+          <option value="">ستارة تجارية نوع Basic</option>
+          <option value="">ستارة تجارية نوع Compact</option>
+          <option value="">ستارة تجارية Drive Thru</option>
+          <option value="">ستارة تجارية نوع Ceiling </option>
+        </select>
+        <hr>
+        <h4 class="filter-title">التصفية حسب التصنيف :</h4>
+        <div class="filter-radio d-flex flex-column gap-2">
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial-1">
+            <label for="radio-check-industrial-1" class="form-range">ستارة صناعية</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS-1">
+            <label for="radio-check-SS-1" class="form-range">ستارة تجارية نوع SS</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru-1">
+            <label for="radio-check-Drive Thru-1" class="form-range">ستارة تجارية Drive Thru</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic-1">
+            <label for="radio-check-Basic-1" class="form-range">ستارة تجارية نوع Basic</label>
+          </div>
+        </div>
+        <hr>
+        <h4 class="filter-title">التصفية حسب الحجم :</h4>
+        <div class="filter-radio d-flex flex-column gap-2">
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-industrial-size-1">
+            <label for="radio-check-industrial-size-1" class="form-range">8 متر </label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-SS-size-1">
+            <label for="radio-check-SS-size-1" class="form-range">4 متر</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Drive Thru-size-1">
+            <label for="radio-check-Drive Thru-size-1" class="form-range">2 متر</label>
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input name="category" type="radio" class="radio form-check-input" id="radio-check-Basic-size-1">
+            <label for="radio-check-Basic-size-1" class="form-range">1 متر</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Filter -->
   <div id="quick-view-product"></div>
   <div id="cart-offcanvas"></div>
   <div id="wishlist-offcanvas"></div>
