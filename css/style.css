@@ -157,7 +157,9 @@ textarea {
 .top-header {
   background-color: var(--background-color);
 }
-
+.btn-primary {
+  background-color: var(--main-color) !important;
+}
 .left-header a {
   margin-left: 20px;
   border-left: 2px solid var(--text-color);
