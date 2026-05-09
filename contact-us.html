@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/Contact.css" />
   <title>Contact Page | تواصل معنا</title>
   <!-- رابط Font Awesome الأحدث والأكثر استقراراً -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
 </head>
 
 <body>
@@ -42,41 +42,46 @@
 
             <!-- الاسم الأول - تم إضافة id -->
             <div class="input-group-wrapper">
-              <p class="text-blk input-title">
+              <label class="text-blk input-title" for="firstName">
                 الاسم الأول
-              </p>
+              </label>
+              <span class="text-danger d-inline-block ms-1">*</span>
               <input class="input" name="FirstName" id="firstName" placeholder="أدخل الاسم الأول...">
             </div>
 
             <!-- الاسم الأخير - تم إضافة id -->
             <div class="input-group-wrapper">
-              <p class="text-blk input-title">
+              <label class="text-blk input-title" for="lastName">
                 الاسم الأخير
-              </p>
+              </label>
+              <span class="text-danger d-inline-block ms-1">*</span>
               <input class="input" name="LastName" id="lastName" placeholder="أدخل الاسم الأخير...">
             </div>
 
             <!-- البريد الإلكتروني - تم إضافة id -->
             <div class="input-group-wrapper">
-              <p class="text-blk input-title">
+              <label class="text-blk input-title">
                 البريد الإلكتروني
-              </p>
+              </label>
+              <span class="text-danger d-inline-block ms-1">*</span>
               <input class="input" name="Email" id="email" type="email" placeholder="example@domain.com">
             </div>
 
             <!-- رقم الهاتف - تم إضافة id -->
             <div class="input-group-wrapper">
-              <p class="text-blk input-title">
+              <label class="text-blk input-title d-inline-block" for="phone">
                 رقم الهاتف
-              </p>
+              </label>
+              <span class="text-danger d-inline-block ms-1">*</span>
               <input class="input" name="PhoneNumber" id="phone" placeholder="05xxxxxxxx">
             </div>
 
             <!-- رسالة الاستفسار - تم إضافة id -->
             <div class="input-group-wrapper">
-              <p class="text-blk input-title">
+              <label class="text-blk input-title" for="message">
                 رسالتك
-              </p>
+              </label>
+              <span class="text-danger d-inline-block ms-1">*</span>
               <textarea class="textinput" name="Message" id="message"
                 placeholder="اكتب استفسارك أو رسالتك هنا..."></textarea>
             </div>
